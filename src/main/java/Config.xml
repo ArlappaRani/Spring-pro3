@@ -1,0 +1,39 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<!-- Setter method -->
+<bean class="com.spring.employee.SpringProject3.Employee" id="emp1">
+<property name="emp_name" value="Ankit"></property>
+<property name="emp_Id" value="01"></property>
+<property name="emp_Salary" value="35000.5F"></property>
+<property name="emp_Age" value="25"></property>
+</bean>
+
+<bean class="com.spring.employee.SpringProject3.Employee" id="emp2">
+<property name="emp_name" value="Anand"></property>
+<property name="emp_Id" value="02"></property>
+<property name="emp_Salary" value="45000.5F"></property>
+<property name="emp_Age" value="27"></property>
+</bean>
+
+<!-- Constructor injection -->
+<bean class="com.spring.employee.SpringProject3.Employee" id="emp3">
+
+<constructor-arg value="Anuj"></constructor-arg>
+<constructor-arg value="03"></constructor-arg>
+<constructor-arg value="55000.5F"></constructor-arg>
+<constructor-arg value="30"></constructor-arg>
+</bean>
+
+<bean class="com.spring.employee.SpringProject3.Employee" id="emp4">
+
+<constructor-arg value="Ayush"></constructor-arg>
+<constructor-arg value="04"></constructor-arg>
+<constructor-arg value="75000.5F"></constructor-arg>
+<constructor-arg value="32"></constructor-arg>
+</bean>
+
+
+</beans>
